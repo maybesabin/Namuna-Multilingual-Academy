@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import logo from '../../public/logo.jpeg'
 
 const poppins = Poppins({
   variable: "--poppins",
@@ -13,6 +14,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Namuna Multilingual Academy",
   description: "Namuna Multilingual Academy",
+  icons: [logo.src]
 };
 
 export default function RootLayout({
