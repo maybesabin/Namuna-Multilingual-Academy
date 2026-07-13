@@ -38,17 +38,6 @@ const AboutUs = () => {
                             height={500}
                         />
                     </div>
-
-                    {/* Badge */}
-                    <div className="absolute flex items-center gap-3 top-28 lg:left-5 -left-1 bg-white rounded-r-full lg:shadow-lg py-3 md:px-6 px-4 pl-1">
-                        <div className="bg-blue-100 rounded-full">
-                            <Users className="size-10 p-2 text-blue-600" />
-                        </div>
-                        <div>
-                            <h2 className="font-semibold md:text-xl text-base text-gray-900">3500+</h2>
-                            <p className="text-xs text-gray-500 -mt-0.5">Enrolled students</p>
-                        </div>
-                    </div>
                 </div>
 
                 <div className="lg:w-1/2 w-full flex flex-col items-start md:gap-4 gap-3">

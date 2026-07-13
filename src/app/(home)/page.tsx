@@ -8,7 +8,8 @@ import PrimaryButton from "@/components/PrimaryButton";
 
 export default function Home() {
   return (
-    <div className="w-full flex flex-col items-start xl:gap-40 lg:gap-32 md:gap-24 gap-12">
+    <div className="w-full flex flex-col items-start lg:gap-32 md:gap-24 gap-12">
+
       {/* Hero Section */}
       <div className="flex items-center justify-center w-full relative">
         <Image
@@ -31,8 +32,9 @@ export default function Home() {
           </div>
         </div>
       </div>
+      
       <AboutUs />
-      <Notice />
+      {/* <Notice /> */}
     </div >
   );
 }
