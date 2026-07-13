@@ -1,14 +1,13 @@
+import Hero from "@/components/Hero"
 import { ReactNode } from "react"
-import Hero from "../(home)/components/Hero"
-import image from "../../../public/hero-image.jpg";
 
 const ContactLayout = ({ children }: { children: ReactNode }) => {
     return (
         <>
+
             <Hero
-                image={image}
-                title="Get In Touch"
-                description=" We're here to answer your questions and help you learn more about Us. Reach out to us anytime!"
+                title="Contact Us"
+                description="Get in touch with us for questions, support, or feedback. We're here to help and look forward to hearing from you."
             />
 
             <div className="w-full flex items-center justify-center mt-12">

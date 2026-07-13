@@ -1,6 +1,5 @@
+import Hero from "@/components/Hero"
 import { ReactNode } from "react"
-import Hero from "../(home)/components/Hero"
-import image from "../../../public/about-image.jpg";
 
 const AboutLayout = ({ children }: { children: ReactNode }) => {
     return (
@@ -8,7 +7,6 @@ const AboutLayout = ({ children }: { children: ReactNode }) => {
             <Hero
                 title="About Us"
                 description="Discover our story, our mission, and what sets us apart. We strive to create value and bring ideas to life through everything we do."
-                image={image}
             />
 
             <div className="w-full flex items-center justify-center lg:mt-36 mt-12">
