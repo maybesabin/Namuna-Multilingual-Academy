@@ -23,7 +23,7 @@ const Header = () => {
     ]
 
     return (
-        <div className="w-full flex items-center justify-between md:py-3.5 py-2.5 bg-[var(--primary-blue)] text-white md:px-6 px-3 text-xs">
+        <div className="w-full flex items-center justify-between md:py-3.5 py-2.5 bg-(--primary-blue) text-white md:px-6 px-3 text-xs">
             <div className="md:flex hidden items-center gap-1.5">
                 <Calendar className="h-3.5 w-3.5" />
                 <span className="font-light">{formattedDate}</span>

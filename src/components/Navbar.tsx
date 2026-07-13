@@ -28,7 +28,7 @@ const Navbar = () => {
     return (
         <div className="w-full flex flex-col items-center relative">
             <Header />
-            <div className="flex items-center justify-between md:px-6 px-3 xl:w-[85rem] w-full my-4">
+            <div className="flex items-center justify-between md:px-6 px-3 xl:w-340 w-full my-4">
 
                 <div className="flex items-center gap-2">
                     <Link href={'/'}>
@@ -77,7 +77,7 @@ const Navbar = () => {
                 {/* Mobile Menu Bar */}
                 <div
                     onClick={() => setShowDropdown(!showDropdown)}
-                    className="cursor-pointer h-10 w-10 bg-[var(--primary-blue)] transition-all rounded-sm lg:hidden flex items-center justify-center"
+                    className="cursor-pointer h-10 w-10 bg-(--primary-blue) transition-all rounded-sm lg:hidden flex items-center justify-center"
                 >
                     <Menu className="text-white h-5 w-5" />
                 </div>

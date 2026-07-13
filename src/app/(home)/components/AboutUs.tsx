@@ -1,10 +1,10 @@
 "use client"
 
-import principal from "../../public/principal.jpg"
-import logo from "../../public/logo.jpeg"
+import principal from "../../../../public/principal.jpg"
+import logo from "../../../../public/logo.jpeg"
 import { CheckCircle, Users } from "lucide-react"
 import Image from "next/image"
-import placeholder from "../../public/placeholder.png"
+import placeholder from "../../../../public/placeholder.png"
 
 const AboutUs = () => {
     const facilities = [
@@ -14,7 +14,7 @@ const AboutUs = () => {
     ]
     return (
         <div className="w-full flex items-center justify-center">
-            <div className="xl:w-[85rem] w-full md:px-6 px-3 flex lg:flex-row flex-col lg:items-center items-start lg:gap-12 gap-6">
+            <div className="xl:w-340 w-full md:px-6 px-3 flex lg:flex-row flex-col lg:items-center items-start lg:gap-12 gap-6">
                 <div className="lg:w-1/2 w-full flex flex-col items-start gap-4 lg:border border-neutral-100 rounded-lg relative">
                     <div className="flex items-center gap-2 lg:px-5 pt-4">
                         <Image
@@ -37,17 +37,6 @@ const AboutUs = () => {
                             width={600}
                             height={500}
                         />
-                    </div>
-
-                    {/* Badge */}
-                    <div className="absolute flex items-center gap-3 top-28 lg:left-5 -left-1 bg-white rounded-r-full lg:shadow-lg py-3 md:px-6 px-4 pl-1">
-                        <div className="bg-blue-100 rounded-full">
-                            <Users className="size-10 p-2 text-blue-600" />
-                        </div>
-                        <div>
-                            <h2 className="font-semibold md:text-xl text-base text-gray-900">3500+</h2>
-                            <p className="text-xs text-gray-500 -mt-0.5">Enrolled students</p>
-                        </div>
                     </div>
                 </div>
 

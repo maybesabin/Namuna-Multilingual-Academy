@@ -1,5 +1,6 @@
+import Separator from "@/components/Separator";
 import { Calendar } from "lucide-react";
-import Separator from "./Separator"
+
 import Link from "next/link";
 
 const LatestNotice = () => {

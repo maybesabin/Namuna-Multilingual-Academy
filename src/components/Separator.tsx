@@ -2,7 +2,7 @@ const Separator = ({ mt }: { mt?: number }) => {
     return (
         <div
             style={{ marginTop: `${mt}px` }}
-            className="w-full h-[1px] bg-neutral-200"
+            className="w-full h-px bg-neutral-200"
         />
     )
 }

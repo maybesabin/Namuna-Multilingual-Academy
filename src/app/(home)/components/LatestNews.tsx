@@ -1,7 +1,8 @@
-import Separator from "./Separator"
-import placeholder from "../../public/placeholder.png"
+
+import placeholder from "../../../../public/placeholder.png"
 import Link from "next/link"
 import Image from "next/image"
+import Separator from "@/components/Separator"
 
 const LatestNews = () => {
 

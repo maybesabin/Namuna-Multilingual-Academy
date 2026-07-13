@@ -25,7 +25,7 @@ const Sidebar = ({
     ]
 
     return (
-        <div className={`${showSidebar ? "visible -right-0 blur-none" : "invisible -right-full blur-md"} min-h-[100svh] fixed top-0 xl:w-[27rem] md:w-96 transition-all duration-500 ease-in-out shadow-lg bg-white p-6 z-50 md:flex flex-col items-start gap-4 hidden`}>
+        <div className={`${showSidebar ? "visible right-0 blur-none" : "invisible -right-full blur-md"} min-h-svh fixed top-0 xl:w-108 md:w-96 transition-all duration-500 ease-in-out shadow-lg bg-white p-6 z-50 md:flex flex-col items-start gap-4 hidden`}>
 
             <div className="w-full flex items-center justify-between">
                 <div className="flex items-center gap-2">
