@@ -50,7 +50,7 @@ const Sidebar = ({
             </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d901387.4223294647!2d81.76062546510204!3d28.053662226540087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39943d1035fcc47b%3A0x8e11a9b5adb38a9f!2sN.C%20Namuna%20English%20School!5e0!3m2!1sen!2snp!4v1746857025416!5m2!1sen!2snp" className="border-0 w-full h-64" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 
-            <h3 className="font-medium lg:text-lg text-base text-blue-600">Get In Touch</h3>
+            <h3 className="font-medium lg:text-lg text-base">Get In Touch</h3>
 
             {contactItems.map((item, idx) => (
                 <div key={idx} className="flex items-center gap-2 -mt-1">
@@ -59,7 +59,7 @@ const Sidebar = ({
                 </div>
             ))}
 
-            <h3 className="font-medium lg:text-lg text-base text-blue-600">Follow Us</h3>
+            <h3 className="font-medium lg:text-lg text-base">Follow Us</h3>
 
             <div className="flex items-center gap-2 -mt-1">
                 {socialItems.map((item, idx) => (
