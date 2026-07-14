@@ -94,6 +94,7 @@ const Navbar = () => {
 
             <Overlay
                 dependency={showSidebar}
+                onClick={() => setShowSidebar(false)}
             />
         </div >
     )
