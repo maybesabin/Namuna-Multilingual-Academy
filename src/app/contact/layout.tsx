@@ -11,7 +11,7 @@ const ContactLayout = ({ children }: { children: ReactNode }) => {
             />
 
             <div className="w-full flex items-center justify-center mt-12">
-                <div className="xl:w-340 w-full md:px-6 px-3 flex flex-col items-center gap-6">
+                <div className="xl:w-340 w-full md:px-6 px-3 flex flex-col items-start gap-6">
                     {children}
                 </div>
             </div>
