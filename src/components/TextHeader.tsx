@@ -5,7 +5,7 @@ const TextHeader = ({
     position = "left"
 }: { caption: string; title: string; position?: "left" | "right" | "center" }) => {
     return (
-        <>
+        <div className={`flex flex-col items-${position} text-${position} w-full`}>
             <h4 className="tracking-wider font-semibold text-blue-800 md:text-base text-sm uppercase mb-2">
                 {caption}
             </h4>
@@ -15,7 +15,7 @@ const TextHeader = ({
                 </h2>
                 <div className={`h-1 w-1/5 bg-blue-800 mt-2 ${position === "right" ? "lg:ml-auto" : position === "center" ? "mx-auto" : ""}`}></div>
             </div>
-        </>
+        </div>
     )
 }
 
