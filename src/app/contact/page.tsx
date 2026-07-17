@@ -28,7 +28,7 @@ export default function Page() {
           For urgent matters, please call our main office during business hours.
         </p>
         <button className="mt-2 cursor-pointer bg-white text-blue-600 transition-all font-medium rounded-md md:text-sm text-xs px-4 py-2.5">
-          Call Now: (+977) 9829100636
+          Call Now: (+977) 9846569612
         </button>
       </div>
     </>

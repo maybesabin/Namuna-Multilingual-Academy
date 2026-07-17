@@ -58,7 +58,7 @@ const Navbar = () => {
                             <span className="hover:text-blue-600 transition-all">
                                 {item.title}
                             </span>
-                            {item.title !== "Home" && item.title !== "About" && item.title !== "Notices" &&
+                            {item.title == "Academics" &&
                                 <ChevronDown className="h-3 w-3" />
                             }
                         </Link>
