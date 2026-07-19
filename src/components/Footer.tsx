@@ -11,26 +11,24 @@ const Footer = () => {
             title: "About Us",
             links: [
                 { title: "Home", href: "/" },
-                { title: "Overview", href: "/overview" },
                 { title: "About Us", href: "/about" },
                 { title: "Academics", href: "/academics" },
-                { title: "Admissions", href: "/admissions" },
+                { title: "Contact", href: "/contact" },
             ]
         },
         {
             title: "Links",
             links: [
                 { title: "Help Center", href: "/contact" },
-                { title: "Gallery", href: "/about" },
-                { title: "News & Articles", href: "/news" },
-                { title: "FAQs", href: "/faqs" },
+                { title: "Gallery", href: "/gallery" },
+                { title: "FAQs", href: "/academics/faqs" },
             ]
         }
     ]
 
     return (
         <div className="w-full flex items-center justify-center md:py-10 py-8 bg-neutral-100/60 mt-12">
-            <div className="xl:w-[85rem] w-full md:px-6 px-3 flex flex-col items-center gap-6">
+            <div className="xl:w-340 w-full md:px-6 px-3 flex flex-col items-center gap-6">
                 <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
 
                     {/* Introduction */}
@@ -41,11 +39,11 @@ const Footer = () => {
                         </p>
                         <div className="text-blue-600 flex items-center gap-2">
                             <MapPin className="h-3 w-3" />
-                            <span className="text-neutral-500 md:text-sm text-xs">123 Education Street, City, Country</span>
+                            <span className="text-neutral-500 md:text-sm text-xs">Ghorahi, Dang</span>
                         </div>
                         <div className="text-blue-600 flex items-center gap-2">
                             <Phone className="h-3 w-3" />
-                            <span className="text-neutral-500 md:text-sm text-xs">+977 9283928392</span>
+                            <span className="text-neutral-500 md:text-sm text-xs">+977 9846569612</span>
                         </div>
                         <div className="text-blue-600 flex items-center gap-2">
                             <Mail className="h-3 w-3" />
@@ -65,7 +63,7 @@ const Footer = () => {
                                 <Link
                                     key={idx}
                                     className="text-neutral-500 hover:text-black transition-all block md:text-sm text-xs"
-                                    href={`/${link.href}`}
+                                    href={link.href}
                                 >
                                     {link.title}
                                 </Link>

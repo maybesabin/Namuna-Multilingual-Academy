@@ -2,19 +2,19 @@
 
 import principal from "../../../../public/principal.jpg"
 import logo from "../../../../public/logo.jpeg"
-import { CheckCircle, Users } from "lucide-react"
+import { GraduationCap, Lightbulb, HeartHandshake } from "lucide-react"
 import Image from "next/image"
 import placeholder from "../../../../public/placeholder.png"
 
 const AboutUs = () => {
     const facilities = [
-        { title: "Innovative Learning", description: "State-of-the-art facilities and interactive methods" },
-        { title: "Expert Educators", description: "Highly qualified faculty with industry experience" },
-        { title: "Supportive Environment", description: "Nurturing atmosphere that promotes growth and well-being" }
+        { title: "Innovative Learning", description: "State-of-the-art facilities and interactive methods", icon: Lightbulb },
+        { title: "Expert Educators", description: "Highly qualified faculty with industry experience", icon: GraduationCap },
+        { title: "Supportive Environment", description: "Nurturing atmosphere that promotes growth and well-being", icon: HeartHandshake }
     ]
     return (
         <div className="w-full flex items-center justify-center">
-            <div className="xl:w-340 w-full md:px-6 px-3 flex lg:flex-row flex-col lg:items-center items-start lg:gap-12 gap-6">
+            <div className="xl:w-340 w-full md:px-6 px-3 flex lg:flex-row flex-col lg:items-end items-start lg:gap-12 gap-6">
                 <div className="lg:w-1/2 w-full flex flex-col items-start gap-4 lg:border border-neutral-100 rounded-lg relative">
                     <div className="flex items-center gap-2 lg:px-5 pt-4">
                         <Image
@@ -47,12 +47,12 @@ const AboutUs = () => {
                         <span className="text-blue-600">Principal</span>
                     </h2>
                     <p className="lg:text-base md:text-sm text-xs text-neutral-600">
-                        Dear Parents, Students, and Well-Wishers, I am delighted to share a momentous announcement with the extended Academy family. Since our establishment in 2015, we have been committed to excellence in education and fostering a supportive learning environment.
+                        Dear Parents, Students, and Well-Wishers, I am delighted to share a momentous announcement with the extended Academy family. Since our establishment in 2082 B.S, we have been committed to excellence in education and fostering a supportive learning environment.
                     </p>
-                    <div className="space-y-6 mt-2">
+                    <div className="space-y-6 mt-2 w-full">
                         {facilities.map((item) => (
-                            <div key={item.title} className="flex items-start gap-3 border p-4 rounded-lg">
-                                <CheckCircle className="text-blue-600 md:h-6 h-4 md:w-6 w-4 mt-2" />
+                            <div key={item.title} className="flex items-start gap-3 border p-4 rounded-lg bg-gray-50">
+                                {item.icon && <item.icon className="text-blue-600 md:h-6 h-4 md:w-6 w-4 mt-2" />}
                                 <div>
                                     <h3 className="font-semibold text-gray-900 md:text-base text-sm">{item.title}</h3>
                                     <p className="text-gray-600 md:text-sm text-xs">{item.description}</p>
