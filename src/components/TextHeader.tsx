@@ -9,7 +9,7 @@ const TextHeader = ({
             <h4 className="tracking-wider font-semibold text-blue-800 md:text-base text-sm uppercase mb-2">
                 {caption}
             </h4>
-            <div className="inline-block">
+            <div className="w-fit">
                 <h2 className="font-serif xl:text-5xl md:text-4xl text-3xl font-bold">
                     {title}
                 </h2>
