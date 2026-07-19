@@ -34,7 +34,7 @@ const Gallery = () => {
     };
 
     return (
-        <section className="py-20">
+        <section>
             <div className="mx-auto max-w-7xl px-6">
 
                 <div
