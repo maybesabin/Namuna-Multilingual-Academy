@@ -25,9 +25,7 @@ export default function Home() {
             Empowering student through quality education and multilingual <br className="md:flex hidden" /> excellence in Nepal
           </h3>
           <div className="flex items-center gap-3">
-            <a href="/about">
-              <PrimaryButton text="Learn More" />
-            </a>
+            <PrimaryButton href="/about" text="Learn More" />
             <a href="/contact" className="cursor-pointer bg-white text-black hover:bg-transparent border hover:text-white border-white transition-all font-medium rounded-sm md:text-sm text-xs px-4 py-2.5">
               Contact Us
             </a>

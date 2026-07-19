@@ -63,7 +63,7 @@ const Navbar = () => {
                             }
                         </Link>
                     ))}
-                    <PrimaryButton text="Admissions" />
+                    <PrimaryButton href="/admissions" text="Admissions" />
                 </div>
 
                 {/* Sidebar Toggle */}
