@@ -14,9 +14,9 @@ const Sidebar = ({
 }: PropsType) => {
 
     const contactItems = [
-        { icon: MapPin, text: "Ghorahi-16, Saniambapur, Sarra, Dang" },
-        { icon: Mail, text: "info@rec.edu.np" },
-        { icon: Phone, text: "+977 9829323223" },
+        { icon: MapPin, text: "Ghorahi, Dang" },
+        { icon: Mail, text: "info@nma.edu.np" },
+        { icon: Phone, text: "+977 9846569612" },
     ]
     const socialItems = [
         { icon: Facebook, href: "www.facebook.com" },

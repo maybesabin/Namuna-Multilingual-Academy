@@ -51,7 +51,7 @@ const AboutUs = () => {
                     </p>
                     <div className="space-y-6 mt-2">
                         {facilities.map((item) => (
-                            <div key={item.title} className="flex items-start gap-3">
+                            <div key={item.title} className="flex items-start gap-3 border p-4 rounded-lg">
                                 <CheckCircle className="text-blue-600 md:h-6 h-4 md:w-6 w-4 mt-2" />
                                 <div>
                                     <h3 className="font-semibold text-gray-900 md:text-base text-sm">{item.title}</h3>

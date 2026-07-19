@@ -17,7 +17,7 @@ const PersonCard = ({ name, position, imageUrl }: PersonCardProps) => {
                 className="rounded-full object-cover lg:size-64 md:size-56 size-32"
             />
             <h3 className="md:text-lg text-sm font-medium">{name}</h3>
-            <p className="-mt-4 text-neutral-600 md:text-sm text-xs">({position})</p>
+            <p className="-mt-4 text-neutral-600 md:text-sm text-xs">{position}</p>
         </div>
     )
 }

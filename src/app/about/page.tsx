@@ -4,34 +4,39 @@ import Image from "next/image";
 import PersonCard from "./components/PersonCard";
 import AboutImage from "../../../public/about-image.jpg"
 import TextHeader from "@/components/TextHeader";
+import ShivaBahadur from "../../../public/shiva-bahadur-gharti-maagar.png";
+import RoshniPun from "../../../public/roshni-pun.jpg";
+import RamPrasad from "../../../public/ram-prasad-bhattarai.jpg"
+import ShivaPrasad from "../../../public/shiva-prasad-jaisi.jpg"
+import BishnuHamal from "../../../public/bishnu-hamal.jpg"
 
 export default function page() {
 
   const teamMembers = [
     {
-      name: "Aarav Shrestha",
+      name: "Bishnu Hamal",
       position: "Principal",
-      imageUrl: "https://images.unsplash.com/photo-1607746882042-944635dfe10e"
+      imageUrl: BishnuHamal.src
     },
     {
-      name: "Sanjana Koirala",
-      position: "Academic Coordinator",
-      imageUrl: "https://images.unsplash.com/photo-1595152772835-219674b2a8a6"
+      name: "Shiva Bahadur Gharti Magar",
+      position: "Board Member",
+      imageUrl: ShivaBahadur.src
     },
     {
-      name: "Ramesh Adhikari",
-      position: "Shareholder",
-      imageUrl: "https://images.unsplash.com/photo-1560250097-0b93528c311a"
+      name: "Roshni Pun",
+      position: "Board Member",
+      imageUrl: RoshniPun.src
     },
     {
-      name: "Priya Gurung",
-      position: "Administrative Officer",
-      imageUrl: "https://images.unsplash.com/photo-1580489944761-15a19d654956"
+      name: "Ram Prasad Bhattarai",
+      position: "Board Member",
+      imageUrl: RamPrasad.src
     },
     {
-      name: "Bikash Thapa",
-      position: "IT Coordinator",
-      imageUrl: "https://images.unsplash.com/photo-1580489944761-15a19d654956"
+      name: "Shiva Prasad Jaisi",
+      position: "Board Member",
+      imageUrl: ShivaPrasad.src
     }
   ];
 
@@ -99,9 +104,9 @@ export default function page() {
         </div>
       </div>
 
-      {/* Our Team  */}
+      {/* Board Members  */}
       <div className="flex flex-col items-center w-full mt-12">
-        <TextHeader caption="meet the people" title="Our Team" position="center" />
+        <TextHeader caption="meet the team" title="Our Team" position="center" />
 
         <div className="flex flex-wrap justify-center gap-12 w-full mt-12">
           {teamMembers.map((member, index) => (
