@@ -90,6 +90,7 @@ const Navbar = () => {
 
             <NavbarDropdown
                 showDropdown={showDropdown}
+                onClose={() => setShowDropdown(false)}
             />
 
             <Overlay
