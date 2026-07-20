@@ -158,7 +158,7 @@ const ContactForm = () => {
                         </div>
                     </div>
 
-                    <Button type="submit" className="w-full h-14 mt-6">
+                    <Button type="submit" className="w-full h-14 mt-6 bg-blue-700 hover:bg-blue-600">
                         Send Message
                     </Button>
                 </form>
