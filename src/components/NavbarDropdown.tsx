@@ -32,7 +32,7 @@ const NavbarDropdown = ({
         { title: "About", href: "/about" },
         { title: "Academics", href: "/academics" },
         { title: "Gallery", href: "/gallery" },
-        { title: "Notices", href: "/notices" },
+        { title: "news", href: "/news" },
         { title: "Contact", href: "/contact" },
         { title: "Admissions", href: "/admissions" }
     ]
