@@ -33,7 +33,8 @@ const NavbarDropdown = ({
         { title: "Academics", href: "/academics" },
         { title: "Gallery", href: "/gallery" },
         { title: "Notices", href: "/notices" },
-        { title: "Contact", href: "/contact" }
+        { title: "Contact", href: "/contact" },
+        { title: "Admissions", href: "/admissions" }
     ]
 
     const pathname = usePathname();

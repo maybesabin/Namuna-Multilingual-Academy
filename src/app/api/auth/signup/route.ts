@@ -13,13 +13,13 @@ export async function POST(req: Request) {
 
 
     if (!password || password.length < 5) {
-        return NextResponse.json({ message: "Password should be at least 5 characters." }, { status: 400 })
+        return NextResponse.json({ message: "Password should be at least 10 characters." }, { status: 400 })
     }
 
     try {
-        const user = await User.findOne({ email })
+        const user = await User.findOne()
         if (user) {
-            return NextResponse.json({ message: "User already exists with this email." }, { status: 400 })
+            return NextResponse.json({ message: "User already exists." }, { status: 400 })
         }
 
         const hashedPassword = await bcrypt.hash(password, 10)
