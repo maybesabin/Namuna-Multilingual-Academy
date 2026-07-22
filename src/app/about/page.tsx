@@ -9,10 +9,17 @@ import RoshniPun from "../../../public/roshni-pun.jpg";
 import RamPrasad from "../../../public/ram-prasad-bhattarai.jpg"
 import ShivaPrasad from "../../../public/shiva-prasad-jaisi.jpg"
 import BishnuHamal from "../../../public/bishnu-hamal.jpg"
+import SitaGhartiMagar from "../../../public/sita-gharti-magar.jpg"
+import GaneshMagar from "../../../public/ganesh-magar.jpg"
 
 export default function page() {
 
   const teamMembers = [
+    {
+      name: "Ganesh Kumar Gharti Magar",
+      position: "Chairman",
+      imageUrl: GaneshMagar.src
+    },
     {
       name: "Bishnu Hamal",
       position: "Principal",
@@ -37,6 +44,11 @@ export default function page() {
       name: "Shiva Prasad Jaisi",
       position: "Board Member",
       imageUrl: ShivaPrasad.src
+    },
+    {
+      name: "Sita Gharti Magar",
+      position: "Board Member",
+      imageUrl: SitaGhartiMagar.src
     }
   ];
 
