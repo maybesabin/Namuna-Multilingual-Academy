@@ -13,7 +13,7 @@ const TextHeader = ({
                 <h2 className="font-serif xl:text-5xl md:text-4xl text-3xl font-bold">
                     {title}
                 </h2>
-                <div className={`h-1 w-1/5 bg-blue-800 mt-2 ${position === "right" ? "lg:ml-auto" : position === "center" ? "mx-auto" : ""}`}></div>
+                <div className={`h-1 md:w-24 w-16 bg-blue-800 mt-2 ${position === "right" ? "lg:ml-auto" : position === "center" ? "mx-auto" : ""}`}></div>
             </div>
         </div>
     )

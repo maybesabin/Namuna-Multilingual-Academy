@@ -1,4 +1,3 @@
-import TextHeader from "@/components/TextHeader"
 import AdmissionStepContainer from "./components/AdmissionStepContainer"
 import AdmissionForm from "./components/AdmissionForm"
 
