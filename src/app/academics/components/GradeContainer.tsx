@@ -52,7 +52,7 @@ const GradesContainer = () => {
                 position="left"
             />
 
-            <div className="md:mt-14 mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+            <div className="md:mt-14 mt-8 grid gap-6 grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
                 {grades.map((grade) => (
                     <GradeCard
                         key={grade.title}

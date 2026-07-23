@@ -1,6 +1,5 @@
 "use client"
 
-import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
@@ -50,13 +49,10 @@ const NavbarDropdown = ({
                                 <Link
                                     href={item.href}
                                     onClick={() => onClose?.()}
-                                    className={`flex items-center justify-between w-full transition-all duration-500 ease-in-out transform ${isActive ? "bg-(--primary-blue) text-white" : "text-(--primary-blue)"} ${showDropdown ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5"} p-3 mb-2`}
+                                    className={`text-sm font-medium flex items-center justify-between w-full transition-all duration-500 ease-in-out transform ${isActive ? "bg-(--primary-blue) text-white" : "text-(--primary-blue)"} ${showDropdown ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5"} p-3 mb-2`}
                                     style={{ transitionDelay: `${idx * 100}ms` }}
                                 >
-                                    <span className="text-sm font-medium">
-                                        {item.title}
-                                    </span>
-                                    {isActive && item.title == "Academics" && <ChevronDown className="h-3.5 w-3.5" />}
+                                    {item.title}
                                 </Link>
                             )
                         })()}

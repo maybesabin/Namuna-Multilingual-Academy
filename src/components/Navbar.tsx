@@ -4,7 +4,7 @@ import Image from "next/image"
 import Header from "./Header"
 import logo from "../../public/logo.jpeg"
 import Link from "next/link"
-import { ChevronDown, Menu } from "lucide-react"
+import { Menu } from "lucide-react"
 import Sidebar from "./Sidebar"
 import { useState } from "react"
 import Overlay from "./Overlay"
@@ -53,14 +53,9 @@ const Navbar = () => {
                         <Link
                             href={item.href}
                             key={idx}
-                            className="md:text-sm text-xs flex items-center gap-2"
+                            className="md:text-sm text-xs hover:text-blue-600 transition-all"
                         >
-                            <span className="hover:text-blue-600 transition-all">
-                                {item.title}
-                            </span>
-                            {item.title == "Academics" &&
-                                <ChevronDown className="h-3 w-3" />
-                            }
+                            {item.title}
                         </Link>
                     ))}
                     <PrimaryButton href="/admissions" text="Admissions" />
